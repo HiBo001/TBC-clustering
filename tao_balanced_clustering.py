@@ -194,7 +194,7 @@ for i in range(1):
 	dir_name = r"... ..."
 	km.loadFromFile(dir_name)
 	start = datetime.now()
-	pre_label, distribution, current_cost = km.start(15, clusterSize_pool.copy())
+	pre_label, distribution, current_cost = km.start(K, clusterSize_pool.copy())
 	end = datetime.now()
 	exec_time = end - start
 	ss = ss + exec_time.microseconds
